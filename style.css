@@ -1,0 +1,70 @@
+/*
+  Theme Name: pure
+  Theme URI:
+  Descritpion : theme basique
+  Version: 1.0
+  Author: ETSL
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400');
+@import url('./css/layouts/side-menu-old-ie.css');
+@import url('./css/layouts/side-menu.css');
+
+@import url('./css/layouts/menu.css');
+
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    /* Set your content font stack here: */
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#menu {
+  background-color: rgba( 238, 238, 238, 1);
+}
+
+.pure-g,
+#main .pure-g {
+  letter-spacing: unset;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.content {
+  
+}
+
+.content header h1 {
+  font-weight: 500;
+}
+.content header h1 a,
+.content header a {
+  text-decoration: none;
+  color: rgba(140, 140, 140,1);
+}
+
+.content header h1 a:hover,
+ .content header h1 a:focus,
+ .content header a:hover,
+  .content header a:focus {
+  text-decoration: underline;
+  color: rgba(140, 140, 140,1);
+}
+
+.content .l-box {
+    padding: 1em;
+    border-top: 1px solid rgba( 238, 238,238, 1);
+    font-size: 0.75em;
+}
+
+.content header .pure-g :first-child {
+  margin-right: 0.5em;
+}
+
+.content header .pure-g :last-child {
+  margin-left: 0.5em;
+}
+
+.l-box {
+    padding: 1em;
+}
