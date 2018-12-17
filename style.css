@@ -7,22 +7,45 @@
 */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,400');
-@import url('./css/layouts/side-menu-old-ie.css');
-@import url('./css/layouts/side-menu.css');
+@import url('./css/side-menu-old-ie.css');
+@import url('./css/side-menu.css');
 
 @import url('./css/layouts/menu.css');
 
+*{
+    box-sizing:border-box;
+}
 
-html, button, input, select, textarea,
+body{
+    padding:0;
+    margin:0;
+}
+
+html, body, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
-    /* Set your content font stack here: */
+    /* choix de la typo et de la couleur : */
     font-family: 'Montserrat', sans-serif;
+    color: #777;
 
 }
 
 #menu {
   background-color: rgba( 238, 238, 238, 1);
+  list-style: none;
+  padding: 0;
 }
+
+#menu .pure-menu,
+#menu .pure-menu ul {
+  list-style: none!important;
+  padding: 0;
+  margin: 0;
+}
+
+#menu .pure-menu ul > li {
+  padding-top: 1em;
+}
+
 
 .pure-g,
 #main .pure-g {
@@ -31,22 +54,20 @@ html, button, input, select, textarea,
 }
 
 .content {
-  
+
 }
 
-.content header h1 {
+article.content header h1 {
   font-weight: 500;
 }
-.content header h1 a,
-.content header a {
+article.content header h1 a,
+article.content header a {
   text-decoration: none;
-  color: rgba(140, 140, 140,1);
+  color: rgba(140,140,140,1);
 }
 
-.content header h1 a:hover,
- .content header h1 a:focus,
- .content header a:hover,
-  .content header a:focus {
+article.content header h1 a:hover,
+article.content header h1 a:focus, {
   text-decoration: underline;
   color: rgba(140, 140, 140,1);
 }
@@ -57,14 +78,20 @@ html, button, input, select, textarea,
     font-size: 0.75em;
 }
 
-.content header .pure-g :first-child {
+article.content header .pure-g :first-child {
   margin-right: 0.5em;
 }
 
-.content header .pure-g :last-child {
+article.content header .pure-g :last-child {
   margin-left: 0.5em;
 }
 
 .l-box {
     padding: 1em;
+}
+
+/* pour image responsive mais on rajoute déjà class="pure-img" sur toutes les images via  functions.php */
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
 }

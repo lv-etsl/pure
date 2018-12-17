@@ -49,14 +49,11 @@
 
     <?php endwhile; ?>
 
-    <div class="pure-g">
-      <div class="pure-u-md-1-6">
-        <div class="nav-previous alignleft"><?php previous_posts_link( 'Older posts' ); ?></div>
-      </div>
-      <div class="pure-u-md-1-6">
-        <div class="nav-next alignright"><?php next_posts_link( 'Newer posts' ); ?></div>
-      </div>
-    </div>
+    <!-- pagination -->
+    <?php
+        if ( function_exists('wp_bootstrap_pagination') )
+          wp_bootstrap_pagination();
+      ?>
 
   </main>
 

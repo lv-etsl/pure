@@ -1,14 +1,6 @@
-body {
-    color: #777;
-}
-
-.pure-img-responsive {
-    max-width: 100%;
-    height: auto;
-}
-
 /*
 Add transition to containers so they can push in and out.
+voir side-menu pour largeur menu.
 */
 
 #layout,
@@ -32,12 +24,12 @@ This is the parent `<div>` that contains the menu and the content area.
 }
 
 #layout.active #menu {
-    left: 150px;
-    width: 150px;
+    left: 200px;
+    width: 200px;
 }
 
 #layout.active .menu-link {
-    left: 150px;
+    left: 200px;
 }
 
 /*
@@ -85,9 +77,9 @@ appears on the left side of the page.
 */
 
 #menu {
-    margin-left: -150px;
+    margin-left: -200px;
     /* "#menu" width */
-    width: 150px;
+    width: 200px;
     position: fixed;
     top: 0;
     left: 0;
@@ -235,21 +227,21 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 }
 
 #layout {
-    padding-left: 150px;
+    padding-left: 200px;
     /* left col width "#menu" */
     left: 0;
 }
 
 #menu {
-    left: 150px;
+    left: 200px;
 }
 
 .menu-link {
     position: fixed;
-    left: 150px;
+    left: 200px;
     display: none;
 }
 
 #layout.active .menu-link {
-    left: 150px;
+    left: 200px;
 }
